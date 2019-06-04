@@ -2,16 +2,22 @@
 var video = document.getElementById("videomoohb");
 var btn = document.getElementById("BtnPlayPause");
 
-function FunctionPlayPlause() {
+
+function FunctionPlayPause() {
   if (video.paused) {
     video.play();
-    btn.innerHTML = "Pause";
+	btn.classList.toggle('fa-pause-circle-o');
+	btn.classList.toggle('fa-play-circle-o');
   } else {
     video.pause();
-    btn.innerHTML = "Play";
+	btn.classList.toggle('fa-play-circle-o');	
+	btn.classList.toggle('fa-pause-circle-o');	
   }
 }
-
-if (video.paused) {
-  btn.innerHTML = "Play";
+function FunctionMuteUnmute() {
+var btnMute = document.getElementById("BtnMuteUnmute");
+video.muted = !video.muted;
+btnMute.classList.toggle('fa-volume-up');	
+btnMute.classList.toggle('fa-volume-off');	
 }
+
