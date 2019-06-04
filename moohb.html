@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video autoplay loop id="videomoohb">
+  <source src="moohb.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<div class = "menu">
+<img class="logo" src="http://www.moohb.com.br/wp-content/uploads/2018/09/MOOHB3.png" alt="moohb">
+<button id="BtnContato" onclick="document.getElementById('ModalContato').style.display='block'">Contato</button>
+</div>
+<div class="footer">
+   <button id="BtnPlayPause" onclick="FunctionPlayPlause()">Pause</button>
+   <div class="social">
+      <a href="#" class="fa fa-facebook"></a>
+   <a href="#" class="fa fa-twitter"></a>
+   </div>
+
+</div>
+ <div id="ModalContato" class="modal">
+    <div class="modalContatoC">
+      <header class=""> 
+        <span onclick="document.getElementById('ModalContato').style.display='none'" 
+        class="btnFechar">&times;</span>
+        <h2>Contato</h2>
+      </header>
+      <div class="modal-container">
+       <div> <i class="fa fa-map-marker texto">  Rua Place de Voges, Bloco 4, Sala 130 - Campinas/SP</i> </div>
+	   <div> <i class="fa fa-phone-square texto"> 19 974222272 / 11 9824 6525</i>  </div>
+	    <div> <i class="fa fa-envelope texto"> andre@moohb.com.br <br /></i>  </div>
+		<div> </div>
+      </div>
+      <footer class="container">
+      </footer>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
